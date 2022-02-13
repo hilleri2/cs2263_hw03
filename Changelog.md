@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -
 
 
-## [1.0.0] - 2022-
+## [0.0.1] - 2022-13-02
 ### Added
-- 
+- Changelog.md
+- Updated README.MD
+- Updated gitignore file for gradle functionality
