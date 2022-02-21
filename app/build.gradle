@@ -16,6 +16,8 @@ plugins {
 
     id 'org.openjfx.javafxplugin' version '0.0.10'
 
+    id "com.github.hierynomus.license-base" version "0.16.1"
+
 }
 
 repositories {
@@ -40,7 +42,7 @@ dependencies {
     //implementation 'com.github.jk1.dependency-license-report:com.github.jk1.dependency-license-report.gradle.plugin:2.0'
 
     // https://mvnrepository.com/artifact/nl.javadude.gradle.plugins/license-gradle-plugin
-    runtimeOnly 'nl.javadude.gradle.plugins:license-gradle-plugin:0.10.0'
+    //runtimeOnly 'nl.javadude.gradle.plugins:license-gradle-plugin:0.10.0'
 
 }
 
@@ -52,6 +54,10 @@ application {
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+}
+
+license {
+    header = project.file('LICENSE')
 }
 
 javadoc {
