@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Gradle functionality
 - Gradle dependencies for JavaFX, Gson, License management, and generating JavaDocs
+- Fixed the License management plugin
 
 
 ## [0.0.1] - 2022-13-02
