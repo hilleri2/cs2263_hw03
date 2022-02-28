@@ -40,9 +40,24 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * This class creates a javaFX user interface to accept inputs, create courses
+ * based on those inputs and add them to a list, can display the courses
+ * either altogether or by department, and can save/load them from a text file.
+ * @author Eric Hill
+ */
 public class CourseProcessor extends Application {
     private ArrayList<Course> courseList = new ArrayList<>();
 
+    /**
+     * this method interfaces with the Course class to create a course and add it to courseList
+     * @param d - the department name
+     * @param na - the class name
+     * @param nu - the class number
+     * @param c - the number of credits
+     * @return the created Course
+     * @throws Exception
+     */
     private Course addCourse(String d, String na, String nu, String c) throws Exception{
         if (d == "" || na == "" || nu == "" || c == ""){
             throw new Exception();
@@ -50,6 +65,10 @@ public class CourseProcessor extends Application {
         return new Course(d,na,nu,c);
     }
 
+    /**
+     * this method saves all the courses in the current list to a text file
+     * @throws IOException
+     */
     private void save() throws IOException {
         Gson gson = new Gson();
 
@@ -63,6 +82,11 @@ public class CourseProcessor extends Application {
         }
         writer.close();
     }
+
+    /**
+     * this method loads all of the courses from the specific text file
+     * @throws FileNotFoundException
+     */
     private void load() throws FileNotFoundException {
         File savefile = new File("ListofCourses.txt");
         Scanner scan = new Scanner(savefile);
@@ -74,6 +98,11 @@ public class CourseProcessor extends Application {
         }
     }
 
+    /**
+     * this method creates and loads all of the javaFX UI elements onto the screen
+     * @param stage1 - holds all of the javaFX Objects and shows them on the screen
+     * @throws Exception
+     */
     public void start(Stage stage1) throws Exception {
         stage1.setTitle("Course Manager");
         Button save = new Button("Save courses");

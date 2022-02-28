@@ -23,6 +23,10 @@
  */
 package cs2263_hw03;
 
+/**
+ * This class holds information about courses
+ * @author Eric Hill
+ */
 public class Course {
     public static final String[] departments = {"Computer Science","Mathematics","Chemistry","Physics","Biology","Electrical Engineering"};
     public static final String[] codes = {"CS", "MATH","CHEM","PHYS","BIOL","EE"};
@@ -32,26 +36,57 @@ public class Course {
     private Integer num;
     private Integer cred;
 
+    /**
+     * This contructs a Course object with all of the provided information
+     * @param d - the department name
+     * @param na - the class name
+     * @param nu - the class number
+     * @param c - the number of credits
+     */
     public Course(String d, String na, String nu, String c){
         dept = d;
         name = na;
         num = Integer.parseInt(nu);
         cred = Integer.parseInt(c);
     }
+
+    /**
+     * empty constructor (for gson functionality)
+     */
     public Course(){}
 
+    /**
+     * this is a simple getter method for the department name
+     * @return the department name
+     */
     public String getDept(){
         return dept;
     }
+    /**
+     * this is a simple getter method for the class name
+     * @return the class name
+     */
     public String getName(){
         return name;
     }
+    /**
+     * this is a simple getter method for the class number
+     * @return the class number
+     */
     public Integer getNum(){
         return num;
     }
+    /**
+     * this is a simple getter method for the number of credits
+     * @return the number of credits
+     */
     public Integer getCred(){
         return cred;
     }
+    /**
+     * this method gets the department code corresponding to the course's department name
+     * @return the department code
+     */
     public String getCode(){
         for (int i = 0; i < departments.length;i++){
             if (dept.equals(departments[i])) return codes[i];
