@@ -43,3 +43,6 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 # End of https://www.gitignore.io/api/java,gradle
+
+# Ignore Gradle build output directory
+build

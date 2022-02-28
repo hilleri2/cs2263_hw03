@@ -1,20 +1,15 @@
 # cs2263_hw03
 Project for homework 3 for cs2263
-This project currently doesn't do anything, but will be iterated with functionality later.
+This project creates a javafx UI to enter, store, and display courses and information about them.
 
 ## Getting Started
-Step 1: clone the repo @ https://github.com/hilleri2/cs2263_hw03.git
-Step 2: N/A
 ### Prerequisites
 N/A
 ### Installing
-N/A
+Step 1: clone the repo @ https://github.com/hilleri2/cs2263_hw03.git
+Step 2: run "gradle run" from the command line at the root of the repo
 ## Running the tests
-N/A
-### Break down into end to end tests
-N/A
-### And coding style tests
-N/A
+There are no tests for this project
 ## Deployment
 N/A
 ## Built With

@@ -1,0 +1,7 @@
+{"dept":"Computer Science","name":"test1","num":100,"cred":3}
+{"dept":"Mathematics","name":"test1","num":100,"cred":3}
+{"dept":"Chemistry","name":"test1","num":100,"cred":3}
+{"dept":"Physics","name":"test1","num":100,"cred":3}
+{"dept":"Biology","name":"test1","num":100,"cred":3}
+{"dept":"Electrical Engineering","name":"test1","num":100,"cred":3}
+{"dept":"Computer Science","name":"Advanced OOP","num":2263,"cred":3}
